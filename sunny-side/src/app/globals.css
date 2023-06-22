@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .port-nav-hover {
+    @apply cursor-pointer transition-all duration-200 p-2 bg-port-yellow-dark text-white rounded-md drop-shadow-md;
+  }
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 254, 228, 207;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.port-nav {
+  @apply cursor-pointer transition-all duration-200 p-2 text-port-yellow-dark;
+}
+
