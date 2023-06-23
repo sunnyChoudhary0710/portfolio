@@ -1,21 +1,21 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from "../link/link";
 
 const Header = () => {
   const [isHeaderOpen, setIsHeaderOpen] = useState(false);
   const openPanel = () => {
     setIsHeaderOpen(!isHeaderOpen);
   };
-  //h-[calc(100vh-5rem)]
   useEffect(() => {
     console.log(isHeaderOpen);
   }, [isHeaderOpen]);
   return (
     <>
-      <header className="sticky top-0 z-20 h-20 bg-port-yellow-light px-0 md:px-4 lg:h-24 lg:px-4 sm:px-0 flex justify-between items-center border-b-2 border-b-rose-50">
-        <div className="h-auto flex items-center">
+      <header className="z-20 bg-port-yellow-light px-0 md:px-4 lg:h-24 lg:px-4 sm:px-0 flex justify-between items-center border-b-2 border-b-rose-50">
+        <div className="h-auto flex items-center p-2">
           <img
-            className="w-24 object-contain cursor-pointer transition-transform hover:rotate-12 hover:scale-125"
+            className="w-20 h-auto object-contain cursor-pointer transition-transform hover:rotate-12 hover:scale-125"
             src="/logo.webp"
             alt="Sunny Side"
           />
@@ -42,23 +42,22 @@ const Header = () => {
         </div>
 
         <nav className="md:flex gap-10 h-auto items-center hidden font-bold">
-          <span className="port-nav hover:port-nav-hover">Projects</span>
-          <span className="port-nav hover:port-nav-hover">About</span>
-          <span className="port-nav hover:port-nav-hover">Career</span>
-          <span className="port-nav hover:port-nav-hover">Interests</span>
-          <span className="port-nav hover:port-nav-hover">Say Hi</span>
+          <a className="port-nav port-nav-hover">Projects</a>
+          <a className="port-nav port-nav-hover">About</a>
+          <a className="port-nav port-nav-hover">Career</a>
+          <a className="port-nav port-nav-hover">Interests</a>
+          <a className="port-nav port-nav-hover" href="/Sunny_Resume_2023.pdf">Download Resume</a>
         </nav>
       </header>
       <div
-        className={`absolute overflow-auto h-[calc(100vh-5rem)] w-screen z-10 bg-black transition-all  ${
+        className={`absolute min-h-screen h-full w-screen z-10 bg-port-yellow-ultra-light transition-all ease-out duration-500  ${
           isHeaderOpen ? "transform-gpu translate-x-[0%]" : "translate-x-full"
-        } flex flex-col gap-20 text-white text-7xl px-16 py-11 items-center`}
+        } flex flex-col gap-20 text-port-yellow-dark text-7xl px-16 py-11 items-center text-center`}
       >
-        <span className="port-nav-mob hover:port-nav-hover-mob">Projects</span>
-        <span className="port-nav-mob hover:port-nav-hover-mob">About</span>
-        <span className="port-nav-mob hover:port-nav-hover-mob">Career</span>
-        <span className="port-nav-mob hover:port-nav-hover-mob">Interests</span>
-        <span className="port-nav-mob hover:port-nav-hover-mob">Say Hi</span>
+        <a className="relative inline-flex justify-center items-center rounded-full w-auto p-1 transition-all duration-300 mob-port-nav-hover">Projects</a>
+        <a className="relative inline-flex justify-center items-center rounded-full w-auto p-1 transition-all duration-300 mob-port-nav-hover">Career</a>
+        <a className="relative inline-flex justify-center items-center rounded-full w-auto p-1 transition-all duration-300 mob-port-nav-hover">Interests</a>
+        <a className="relative inline-flex justify-center items-center rounded-full w-auto p-1 transition-all duration-300 mob-port-nav-hover" href="/Sunny_Resume_2023.pdf">Download Resume</a>
       </div>
     </>
   );

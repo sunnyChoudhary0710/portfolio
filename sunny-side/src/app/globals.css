@@ -4,7 +4,11 @@
 
 @layer utilities {
   .port-nav-hover {
-    @apply cursor-pointer transition-all duration-200 p-2 bg-port-yellow-dark text-white rounded-md drop-shadow-md;
+    /* @apply cursor-pointer transition-all duration-200 p-2 bg-port-yellow-dark text-white rounded-md drop-shadow-md; */
+    @apply hover:cursor-pointer after:rounded-full after:content-[''] after:w-0 after:left-0 after:bottom-1 after:bg-port-pink-base after:absolute after:-rotate-2 after:h-1 after:transition-all hover:after:w-full;
+  }
+  .mob-port-nav-hover {
+    @apply hover:cursor-pointer after:content-[''] after:w-0 after:bottom-0 after:bg-port-pink-base after:absolute after:-rotate-2 after:h-1 after:transition-all hover:after:w-full;
   }
 }
 
@@ -22,7 +26,27 @@
   }
 }
 
-.port-nav {
-  @apply cursor-pointer transition-all duration-200 p-2 text-port-yellow-dark;
+body {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
+.port-nav {
+  @apply relative cursor-pointer transition-all duration-200 p-2 text-port-yellow-ultra-dark;
+}
+
+#portrait1 {
+  position:absolute;
+  z-index:2;
+  right:0; bottom:0; left:0;
+  background: none;
+  background: -moz-linear-gradient(top,   0%, rgba(255,255,255,1) 80%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(80%,rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 80%);
+  background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 80%);
+  background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 80%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+
+}

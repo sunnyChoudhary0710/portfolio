@@ -15,9 +15,20 @@ module.exports = {
       colors: {
         'port-bg-base': '#cb8c8f',
         'port-yellow-dark': '#ea9a38',
-        'port-yellow-light': '#fee3ce'
+        'port-yellow-light': '#fee3ce',
+        'port-yellow-ultra-light': '#fff6ee',
+        'port-yellow-ultra-dark': '#6d3035',
+        'port-pink-base': '#f67473'
+      },
+      fontSize: {
+        clamp: "clamp(1rem, 3vw, 3rem)",
+      },
+      animation: {
+        'spin-slow': 'spin 10s linear infinite',
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
