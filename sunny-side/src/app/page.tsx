@@ -6,7 +6,7 @@ import Overview from "@/components/overview/overview";
 export default function Home() {
   return (
     <>
-      <div className="font-sans bg-port-yellow-light lg:px-8 z-10">
+      {/* <div className="font-sans bg-port-yellow-light lg:px-8 z-10">
         <Header />
         <Overview />
       </div>
@@ -16,8 +16,8 @@ export default function Home() {
       </div>
       <div className="hidden absolute w-[calc(100vw+150px)] -left-3 h-fit bg-port-yellow-ultra-light text-port-yellow-ultra-dark bottom-72 z-0 -rotate-12  lg:block">
         <Ribbon />
-      </div>
-      {/* <Carousel /> */}
+      </div> */}
+      <Carousel />
 
       {/* <main>This is main content area</main>
 

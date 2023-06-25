@@ -58,6 +58,9 @@
   .text-underliner {
     @apply absolute w-8/12 h-2 rounded-lg right-0 left-0 mx-auto -rotate-2 bg-port-pink-base lg:mx-0;
   }
+  .inline-text-underliner {
+    @apply absolute -bottom-0 h-1 rounded-lg right-0 left-0 mx-auto -rotate-2 bg-port-pink-base lg:mx-0;
+  }
   .animation-delay {
     animation-delay: 4s;
   }
@@ -81,6 +84,10 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+}
+
+img > svg {
+  -webkit-text-stroke-color: aliceblue;
 }
 
 @-ms-viewport{
