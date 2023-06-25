@@ -18,7 +18,7 @@ export default function RootLayout({
       <meta name="viewport" content="width=device-width, minimum-scale=1.0"></meta>
       <meta name="theme-color" content="#ea9a38"></meta>
       <body
-        className={`${inter.className} max-w-screen-2xl m-auto font-sans bg-port-yellow-light lg:px-8`}
+        className={`${inter.className} bg-port-yellow-ultra-light`}
       >
         {children}
       </body>
