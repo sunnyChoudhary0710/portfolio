@@ -10,21 +10,25 @@ const Carousel = () => {
           Carousel{" "}
           <span className="relative after:inline-text-underliner">Title</span>
         </h2>
-        <div className="overflow-x-auto whitespace-nowrap">
+        <div className="invisibility-scroll overflow-x-auto whitespace-nowrap snap-x snap-mandatory">
           {Data_Array.map((item) => {
             return (
-              <article className=" inline-block mx-8">
+              <article className="w-3/4 lg:w-auto inline-block mx-4 lg:mx-8 snap-start scroll-mx-4 lg:scroll-mx-12">
                 <Image
-                  className="rounded-full"
+                  className="rounded-t-full m-0"
                   blurDataURL={item.blurDataUrl}
                   src={item.src}
                   quality={75}
                   width={500}
-                  height={800}
+                  height={300}
                   style={{ width: "auto", height: "auto" }}
                   alt={item.alt}
                   placeholder="blur"
                 ></Image>
+                <section className="p-4 whitespace-normal bg-port-yellow-light text-port-yellow-ultra-dark m-0">
+                  <h2 className="m-0">{item.title}</h2>
+                  <p className="m-0 leading-9">{item.body}</p>
+                </section>
               </article>
             );
           })}

@@ -6,55 +6,77 @@ export const Data_Array = [
     src: "/sun.jpg",
     blurDataUrl: Placeholder_Image,
     alt: "portrait",
+    title: "Heading here",
+    body: "Rest of the description comes here."
   },
   {
     src: "/sun.jpg",
     blurDataUrl: Placeholder_Image,
     alt: "portrait",
+    title: "Heading here",
+    body: "Rest of the description comes here."
   },
   {
     src: "/sun.jpg",
     blurDataUrl: Placeholder_Image,
     alt: "portrait",
+    title: "Heading here",
+    body: "Rest of the description comes here."
   },
   {
     src: "/sun.jpg",
     blurDataUrl: Placeholder_Image,
     alt: "portrait",
+    title: "Heading here",
+    body: "Rest of the description comes here."
   },
   {
     src: "/sun.jpg",
     blurDataUrl: Placeholder_Image,
     alt: "portrait",
+    title: "Heading here",
+    body: "Rest of the description comes here."
   },
   {
     src: "/sun.jpg",
     blurDataUrl: Placeholder_Image,
     alt: "portrait",
+    title: "Heading here",
+    body: "Rest of the description comes here."
   },
   {
     src: "/sun.jpg",
     blurDataUrl: Placeholder_Image,
     alt: "portrait",
+    title: "Heading here",
+    body: "Rest of the description comes here."
   },
   {
     src: "/sun.jpg",
     blurDataUrl: Placeholder_Image,
     alt: "portrait",
+    title: "Heading here",
+    body: "Rest of the description comes here."
   },
   {
     src: "/sun.jpg",
     blurDataUrl: Placeholder_Image,
     alt: "portrait",
+    title: "Heading here",
+    body: "Rest of the description comes here."
   },
   {
     src: "/sun.jpg",
     blurDataUrl: Placeholder_Image,
     alt: "portrait",
+    title: "Heading here",
+    body: "Rest of the description comes here."
   },
   {
     src: "/sun.jpg",
     blurDataUrl: Placeholder_Image,
     alt: "portrait",
+    title: "Heading here",
+    body: "Rest of the description comes here."
   },
 ];

@@ -64,6 +64,9 @@
   .animation-delay {
     animation-delay: 4s;
   }
+  .invisible-scroll{
+
+  }
 }
 
 :root {
@@ -88,6 +91,10 @@ body {
 
 img > svg {
   -webkit-text-stroke-color: aliceblue;
+}
+
+.invisibility-scroll::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
 @-ms-viewport{
