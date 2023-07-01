@@ -6,7 +6,7 @@ import Ribbon from "../ribbon/ribbon";
 const Overview = () => {
 	return (
 		<div className="relative">
-			<div className="max-w-screen-2xl m-auto flex px-5 flex-col gap-3 text-center my-12 lg:my-3 prose-xl  text-clamp lg:grid lg:grid-cols-2 lg:text-left lg:px-0">
+			<div className="max-w-screen-2xl m-auto flex px-5 flex-col gap-3 text-center my-12 lg:my-3 prose-xl  text-clamp lg:grid lg:grid-cols-2 lg:text-left lg:px-12">
 				<div id="intro" className="flex flex-col gap-3 my-7 lg:mt-40 lg:gap-9">
 					<h3 className="text-port-pink-base font-special font-medium text-base m-0 lg:text-lg hover:cursor-default">
 						Sunny Choudhary
